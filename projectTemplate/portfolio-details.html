@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Project Details</title>
+  <link rel="stylesheet" href="static/portfolio-style.css">
+  <link rel="stylesheet" href="static/bootstrap.min.css">
+  <link rel="stylesheet" href="static/bootstrap.css">
+  <link rel="stylesheet" href="static/boxicons.min.css">
+
+
+  <meta content="CodXCrpt's Project" name="descriptsion">
+  <meta content="CodXCrpt's Project" name="keywords">
+
+
+<link href="bootstrap.min.css" rel="static/stylesheet">
+  <link href="bootstrap.css" rel="static/stylesheet">
+  <link href="boxicons.min.css" rel="static/stylesheet">
+
+</head>
+
+<body>
+
+  <main id="main">
+
+    <!-- ======= Portfolio Details Section ======= -->
+    <section id="portfolio-details" class="portfolio-details">
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-8">
+            <h2 class="portfolio-title">This is an example of portfolio detail</h2>
+                <div class="w3-container">
+                <h2>Slideshow Indicators</h2>
+                <p>An example of using buttons to indicate how many slides there are in the slideshow, and which slide the user is currently viewing.</p>
+              </div>
+
+              <div class="w3-content w3-display-container" style="max-width:800px">
+                <img class="mySlides" src="https://s4.thingpic.com/images/Tb/MsANWXr7Y2FF4Zf9vXHfpMCH.jpeg" style="width:100%">
+                <img class="mySlides" src="https://www.wallpaperup.com/uploads/wallpapers/2013/02/28/46236/171a65f39ee30f84282a36956aeedb25-700.jpg" style="width:100%">
+                <img class="mySlides" src="https://s1.best-wallpaper.net/wallpaper/m/1905/Beautiful-summer-red-poppy-flowers-green-grass-and-trees-sun-rays_m.jpg" style="width:100%">
+                <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+                  <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+                  <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+                  <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+                  <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+                  <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+                </div>
+</div>
+
+
+          </div>
+
+          <div class="col-lg-4 portfolio-info">
+            <h3>Project Description</h3>
+            <ul>
+              <li><strong>Contributor: </strong>XYZ</li>
+              <li><strong>Contributor's GitHub repo:</strong> ABC</li>
+              <li><strong>Project date</strong>: 01 March, 2020</li>
+              <li><strong>Project URL</strong>: <a href="#">www.example.com</a></li>
+            </ul>
+
+            <p>
+              Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Details Section -->
+
+  </main><!-- End #main -->
+
+  <script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " w3-white";
+}
+</script>
+
+</body>
+
+</html>
